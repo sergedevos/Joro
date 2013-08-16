@@ -8,11 +8,15 @@ import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+
 import java.awt.Font;
+
 import net.miginfocom.swing.MigLayout;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+@SuppressWarnings("serial")
 public class ExitDialog extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();

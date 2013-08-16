@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data-map xmlns="http://cayenne.apache.org/schema/3.0/modelMap"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://cayenne.apache.org/schema/3.0/modelMap http://cayenne.apache.org/schema/3.0/modelMap.xsd"
+  project-version="3.0.0.1">
+	<property name="defaultLockType" value="optimistic"/>
+	<property name="defaultPackage" value="nl.joro.backend.persistent"/>
+	<property name="defaultSchema" value="joro"/>
+	<db-entity name="category" schema="joro">
+		<db-attribute name="id" type="BIGINT" isPrimaryKey="true" isMandatory="true"/>
+		<db-attribute name="name" type="VARCHAR" isMandatory="true" length="128"/>
+	</db-entity>
+	<obj-entity name="Category" className="nl.joro.backend.persistent.Category" lock-type="optimistic" dbEntityName="category">
+		<obj-attribute name="name" type="java.lang.String" db-attribute-path="name"/>
+	</obj-entity>
+</data-map>

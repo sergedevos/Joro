@@ -1,0 +1,4 @@
+includeFlat 'frontend'
+includeFlat 'backend'
+
+rootProject.name = 'joro'	

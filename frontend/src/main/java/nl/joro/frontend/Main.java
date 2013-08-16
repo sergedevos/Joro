@@ -12,6 +12,7 @@ import javax.swing.JSeparator;
 import javax.swing.JTabbedPane;
 
 import net.miginfocom.swing.MigLayout;
+import java.awt.Toolkit;
 
 public class Main {
 
@@ -45,6 +46,7 @@ public class Main {
 	 */
 	private void initialize() {
 		frmOfflineRekeningOverzicht = new JFrame();
+		frmOfflineRekeningOverzicht.setIconImage(Toolkit.getDefaultToolkit().getImage(Main.class.getResource("/images/euro munt.jpg")));
 		frmOfflineRekeningOverzicht.setTitle("Offline Rekening Overzicht");
 		frmOfflineRekeningOverzicht.setBounds(100, 100, 800, 600);
 		frmOfflineRekeningOverzicht.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

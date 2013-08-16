@@ -1,16 +1,18 @@
 package nl.joro.frontend;
 
-import javax.swing.JPanel;
 import java.awt.BorderLayout;
-import net.miginfocom.swing.MigLayout;
-import javax.swing.JLabel;
-import javax.swing.JComboBox;
-import javax.swing.JTable;
-import javax.swing.JTextField;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.ListSelectionModel;
-import javax.swing.JScrollPane;
 
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
+import javax.swing.table.DefaultTableModel;
+
+import net.miginfocom.swing.MigLayout;
+
+@SuppressWarnings("serial")
 public class OverviewPanel extends JPanel {
 	private JTable table;
 
